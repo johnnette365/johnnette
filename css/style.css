@@ -1,3 +1,5 @@
+@import url('http://fonts.cdnfonts.com/css/d-din');
+
 @font-face {
     font-family: "d-din";
     src: url("fonts/D-DIN-Bold.otf");
@@ -38,11 +40,13 @@ header {
 }
 
 .header {
-    transform: translateY(-100%);
+    /* transform: translateY(-100%); */
+    opacity: 0;
 }
 
 .header.show {
-    transform: translateY(0);
+    /* transform: translateY(0); */
+    opacity: 1;
 }
 
 .header_background {
@@ -54,6 +58,7 @@ header {
     left: 0;
     background-color: black;
     transform: translateY(-100%);
+    opacity: 1;
     /* clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); */
 }
 
@@ -600,5 +605,8 @@ body {
 @media screen and ( max-width: 430px) {
     .footer .footer-right>* {
         flex: 1 100%;
+    }
+    .footer-bottom {
+        padding-top: 20px;
     }
 }
